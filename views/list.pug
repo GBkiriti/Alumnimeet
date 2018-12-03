@@ -1,0 +1,16 @@
+extends bootstrap-base
+
+block franken-body
+    table
+        thead
+            th Name
+            th Branch
+            th INDIVIDUAL/FAMILY
+            th TYPE OF MEET
+        tbody
+            each idea in sheet
+                tr
+                    td=idea.name
+                    td=idea.branch
+                    td=idea.arrivalstat
+                    td=idea.meetingtype

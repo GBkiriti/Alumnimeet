@@ -1,0 +1,31 @@
+extends bootstrap-base
+
+block franken-body
+  h1 ALUMNI MEET
+  form(action='/' method="post")
+    .form-group
+      label NAME
+      input.form-control(name='name', type='text', maxlength='50')
+      br
+    .form-group
+      label BRANCH
+      select.form-control(name='branch')
+        option(value='ECE') ECE
+        option(value='CSE') CSE
+        option(value='EEE') EEE
+        option(value='CIVIL') CIVIL
+        option(value='MECH') MECHANICAL
+      br
+    .form-group
+      label INDIVIDUAL/FAMILY
+      select.form-control(name='arrivalstat')
+        option(value='withfam') WITH FAMILY
+        option(value='withoutfam') WITHOUT FAMILY
+      br
+    .form-group
+      label TYPE OF MEET
+      select.form-control(name='meetingtype')
+        option(value='dayout') A DAY OUT AT RESORT
+        option(value='dinner') DINNER AT RESTAURANT
+        option(value='both') DINNER AND DAYOUT AT RESORT
+    button.btn.btn-primary(type='submit') Submit
