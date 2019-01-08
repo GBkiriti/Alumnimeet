@@ -8,7 +8,7 @@ var store = admin.firestore();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	res.render('index', { title: 'alumni' });
+	res.render('index', { title: 'KLH_SPORTSDAY' });
 });
 
 router.post('/', function (req, res) {
@@ -17,8 +17,7 @@ router.post('/', function (req, res) {
 	var body = {
 		name: text.name,
 		branch: text.branch,
-		arrivalstat: text.arrivalstat,
-		meetingtype: text.meetingtype,
+		sport: text.sport,
 	};
 	
 	store.collection("entries").add(body).then(function(docRef) {
