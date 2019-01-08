@@ -1,6 +1,7 @@
-extends layout
+extends bootstrap-base
 
-  h1 KLH SPORTS DAY
+block franken-body
+  h1 ALUMNI MEET
   form(action='/' method="post")
     .form-group
       label NAME
@@ -8,13 +9,13 @@ extends layout
       br
     .form-group
       label BRANCH
-      select.form-control(name= 'branch')
+      select.form-control(name='branch')
         option(value='ECE') ECE
         option(value='CSE') CSE
       br
     .form-group
       label SPORT
-      select.form-control(name= 'sport')
+      select.form-control(name='SPORT')
         option(value='CRICKET')CRICKET
         option(value='FOOTBALL')FOOTBALL
         option(value='VOLLEYBALL')VOLLEY-BALL
