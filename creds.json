@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "sportsdaylist",
+  "private_key_id": "a53bc82549bcf37a6843ffcb5f6a0247d8d23e4f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQC3WMG2oSHWPaeN\n2+x9/yn0kzJbuUgcu5yXUw8zgDtauBFnd4MRVvxCjuUBDPOZcJcCKkuGpmyyrwga\n1SZL/7rGPD+T5lfQUCOJbR17N72eGWWu8nMjZS048ROaDTCu+sJTp6W8lRVXgZmu\nsU1t974vIpEHwzI6jHe+StXW6W87dviiJBkix94DZQcrFY7E/M4iKwlXrKAhLt5o\nzwGyjA4uMuGL4OxusEofP+dZA7ilLSyOu8mu7aywJh/MUqW7nSb6PVLFrXeAD3Gj\nxOwDEN/EZl0frainMHgdP4wtWCI6uqJpxIGvu4iDbZS1I8ZSNitDNDK+PUUtBJHk\nnoGgzZsfAgMBAAECggEAMrTkVir4HbVNeqlBHZONOevfuIhkjjXA2AULpjWntK5F\nefUOlaQV/h5g7Up0sJH34Yxq+OFcHIrV1f3vKoOeVybgennw/Va8jUxVI/fFhE0H\n1zuMZlScDix2PFu7hBkr11D9QEuG7H2WUD8O6APlYEnSDHCKmrCwiTtPKrHCppIH\npWCUqNybGnLhUk22c0MllyVRPnEPd/CLi+WStBkpvaFkLLeEAaVucgJ0cNGm4KR3\nJdpZspNEZ5FgqT8uGdGEJsZqQL9UubElaE5ab70ENnmPDnVsiR2WacsP57pCe4CE\nnlvFIqKyMjqG37PpLoS35nn/kPjQ1Ny84epfz0ZK8QKBgQDlqWrjO8vA9kabNLeC\n2J3zWArKOwSeVzq/E2g1GLPaXrCgm6IPoaFmFGFaeN1i1vWnfRRhZ7QoZaXBx0A/\n4Z/WTNg6hHjenPL2qriXW7Ev+bJNlAmospuP4eKAWv5SJ6TBysOqk/KU2kFyWQQH\n/KU0caZYIiWe+6/K6syjO8NqSQKBgQDMX5Ycjq1NIQi69MG5XjsbyOJkNJBrwyVE\nfOtRSann3jXNbgLhljjaMROYHVHw0FSlkGk5oJMQZ6DkVOAgCTKiWmS6JK46ROw3\nftXbhh6BJZ+ocGNsog12nKhuU45doUmKtKoKW/tHSnlV1s8uWMJ917MVpihRheYB\nV3ksS1UaJwKBgDWfdwuTfKGTXy0CBA8TEN4uomZRnWRzLY5Ls7siB2xnS4pUjGRl\n8s9o1spPCjH3yufOdqG/mvsLsMYsBb5kqfNZges33xjrQHeDqRH+IML45D7k39R5\nz4Sq0z3xAQyhoQB2nXUIkk1bIIjYa+6JePFjz9koL+yNC6CvbhR28cuxAoGAU/38\nvWPNyWMIKX2pmDsn47VdhX0s1Xzv9gO42kGB+G8UgYby3C9W0iVVPjDemi+keh6t\ngCeECTvtnalcKw5cpuireOzWRdBJnE0eKwglxUHnKdx2oBDBo7uiZSUl30kH5l91\neqhuzs/GqgaMQynrVLivOvh8nXSAIJEIlbGoGgUCgYEAqTHftXPA0UfH0Rkxqk3U\nwtMyNalR1Us2WjAzWSGNNO3YuBh71rGRAHeWOlMBzQ43244HiVLNdEbEMONqKnnx\nRSPMkt6w1U6H+pb2uSIN+iEwQaE22XUKdeuMVnHKfnM6+tJtSr+yW4e64LSKvD/9\n17QK8Mh2GsXpaRm+a+aAQZI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-qjj8f@sportsdaylist.iam.gserviceaccount.com",
+  "client_id": "110115610001355206991",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-qjj8f%40sportsdaylist.iam.gserviceaccount.com"
+}

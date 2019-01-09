@@ -1,10 +1,23 @@
 var express = require('express');
 var router = express.Router();
 var fs = require('fs');
-var admin = require("firebase-admin");
+var admin = require("firebase");
 
+var serviceAccount = require("../creds.json");
+// console.log(serviceAccount);
 
-var store = admin.firestore();
+// Initialize Firebase
+var config = {
+	apiKey: "AIzaSyCyRr7A79a4YkfkQcrOqJSFoZt2A1cy2ak",
+	authDomain: "sportsdaylist.firebaseapp.com",
+	databaseURL: "https://sportsdaylist.firebaseio.com",
+	projectId: "sportsdaylist",
+	storageBucket: "sportsdaylist.appspot.com",
+	messagingSenderId: "947247987003"
+};
+admin.initializeApp(config);
+
+var db = admin.database();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
@@ -19,11 +32,11 @@ router.post('/', function (req, res) {
 		branch: text.branch,
 		sport: text.sport,
 	};
-	
-	store.collection("entries").add(body).then(function(docRef) {
-		if (docRef !== null) {
-			console.log("Entered body to firestore");
-		}
+
+	db.ref('entries').push(body, function (err) {
+		if (err) throw err;
+
+		console.log("Ok");
 	});
 
 	// Respond to the user
@@ -31,7 +44,7 @@ router.post('/', function (req, res) {
 });
 
 router.get('/list', function (req, res) {
-	store.collection("entries").get().then(function(snapshot) {
+	store.collection("entries").get().then(function (snapshot) {
 		res.render('list', { sheet: snapshot });
 	});
 });
