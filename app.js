@@ -8,7 +8,7 @@ var serviceAccount = require("./serviceAccountKey.json");
 
 admin.initializeApp({
 	credential: admin.credential.cert(serviceAccount),
-	databaseURL: "https://valkyrie-z.firebaseio.com"
+	databaseURL: "https://sportsdaylist.firebaseio.com/"
 });
 
 var indexRouter = require('./routes/index');
