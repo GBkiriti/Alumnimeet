@@ -29,6 +29,8 @@ router.post('/', function (req, res) {
 	var text = req.body;
 	var body = {
 		name: text.name,
+		gender: text.gender,
+		rollno: text.rollno,
 		branch: text.branch,
 		sport: text.sport,
 	};

@@ -5,8 +5,17 @@ block franken-body
   h1 KLH SPORTSDAY
   form(action='/' method="post")
     .form-group
-      label NAME
+      label NAME:
       input.form-control(name='name', type='text', maxlength='50')
+      br
+    .form-group
+      label GENDER
+      select.form-control(name='gender')
+        option(value='MALE') MALE
+        option(value='FEMALE') FEMALE
+    .form-gorup
+      label ROLLNUMBER:
+      input.form-control(name='rollno',type='number',maxlength='10')
       br
     .form-group
       label BRANCH
@@ -17,14 +26,13 @@ block franken-body
     .form-group
       label SPORT
       select.form-control(name='sport')
-        option(value='CRICKET') CRICKET
-        option(value='FOOTBALL') FOOTBALL
-        option(value='VOLLEYBALL') VOLLEY-BALL
-        option(value='THROWBALL') THROW-BALL
         option(value='CHESS') CHESS
         option(value='TABLETENNIS') TABLE-TENNIS
         option(value='CARROMS') CARROM-BOARD
-        option(value='KABADDI') KABADDI
+        option(value='Chess&TT') CHESS & TABLE-TENNIS
+        option(value='TT&Carrom') TABLE-TENNIS & CARROM
+        option(value='Carrom&Chess') CARROM & CHESS
+        option(value='allthree') ALL_THREE
       br
     button.btn.btn-primary(type='submit') Submit
     footer
