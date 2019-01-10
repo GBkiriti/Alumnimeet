@@ -42,7 +42,7 @@ router.post('/', function (req, res) {
 	});
 
 	// Respond to the user
-	res.send("submitted! ");
+	res.send(" FORM SUBMITTED! ");
 });
 
 router.get('/list', function (req, res) {
