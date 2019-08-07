@@ -1,0 +1,23 @@
+<html>
+<head>  
+<script type="text/javascript">
+function CheckColors(val){
+ var element=document.getElementById('color');
+ if(val=='carroms')
+   element.style.display='block';
+ else  
+   element.style.display='none';
+}
+
+</script> 
+</head>
+<body>
+  <select name="sport" onchange='CheckColors(this.value);'> 
+    <option>Select a sport</option>  
+    <option value="carroms">Carroms</option>
+    <option value="blue">Chess</option>
+    <option value="others">Table Tennis</option>
+  </select>
+<input type="text" name="sport" id="color" style='display:none;'/>
+</body>
+</html>

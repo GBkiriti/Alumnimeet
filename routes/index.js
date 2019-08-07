@@ -21,7 +21,7 @@ var db = admin.database();
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-	res.render('index', { title: 'School Reunion' });
+	res.render('index', { title: 'Sports for Indendence Day at KLH' });
 });
 
 router.post('/', function (req, res) {
@@ -29,7 +29,10 @@ router.post('/', function (req, res) {
 	var text = req.body;
 	var body = {
 		name: text.name,
-		place: text.place,
+		gender: text.gender,
+		carroms:text.carroms,
+		chess:text.chess,
+		tablet:text.tablet,
 	};
 
 	db.ref('entries').push(body, function (err) {

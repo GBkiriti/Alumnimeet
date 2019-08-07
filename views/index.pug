@@ -1,59 +1,87 @@
 extends bootstrap-base
 
 block franken-body
-//center
-  img(src="https://www.enrolmentdesk.com/components/com_mijoshop/opencart/image/cache/data/stpeters-500x500.jpg")
-  h1 ST PETERS GRAMMAR SCHOOL BATCH 2015
-  form(action='/' method="post" background='')
-    .form-group
-    h1 TAKE A SMALL POLL.
-    .form-group
-      h2 Who all are interested?
-      label name
-      input.form-control(name='name',type='text',maxlength='20')
-      br
-    .form-group
-      h2 Place where you feel to have a Re-Union
-      label place
-      input.form-control(name='place',type='text',maxlength='30')
-      br
-      button.btn.btn-primary(type='submit') Submit  
-    footer
-  p 
+  //center
+  title
+    |Sports for Independence Day
+  p(style='text-align: center')
+    img(src='https://www.greatbuyz.com/blog/wp-content/uploads/2017/08/Independence-Day-Celebration.jpg')
+  center
+    h1 SPORTS FOR INDEPENDENCE DAY
+    form(action='/' method="post" background='')
+      .form-group
+      h1 SELECT THE SPORT
+      .form-group
+        h2
+        label NAME
+        input.form-control(name='name',type='text',maxlength='20')
+        br
+      .form-group
+        h2
+        label GENDER: 
+            select.form-control(name="gender")
+              option(value='male') MALE
+              option(value='female') FEMALE
+        br
+      .form-group
+        h2 
+        label(value="carrom") CARROMS:
+        select.form-control(name="carroms")
+            option(value='none') NONE
+            option(value='singles') SINGLES
+            option(value='doubles') DOUBLES
 
-  #br
-    meta(name='viewport', content='width=device-width, initial-scale=1')
-    style.
-      p {
-      text-align: center;
-      font-size: 60px;
-      margin-top: 0px;
-      }
+        br
+      .form-group
+        h2 
+        label CHESS:
+          select.form-control(name="chess")
+              option(value='no_for_chess') NO
+              option(value='yes_for_chess') YES
+
+        br
+      .form-group
+        h2 
+        label TABLE TENNIS: 
+          select.form-control(name="tablet")
+            option(value='no_for_tt') NO
+            option(value='yes_for_tt') YES
+        br  
+        button.btn.btn-primary(type='submit') Submit  
+        h1 IF ANYONE IS INTERESTED IN THE FOLLOWING VOLLEY BALL , THROW BALL AND TUG OF WAR PLEASE GIVE YOUR TEAM DETAILS AT SPORTS ROOM
+      footer
+    p 
+
+    #br
+      meta(name='viewport', content='width=device-width, initial-scale=1')
+      style.
+        p {
+        text-align: center;
+        font-size: 60px;
+        margin-top: 0px;
+        }
+
     p#demo
-    script.
-      // Set the date we're counting down to
-      var countDownDate = new Date(" May 21, 2019 00:00:00").getTime();
-      // Update the count down every 1 second
-      var x = setInterval(function() {
-      // Get todays date and time
-      var now = new Date().getTime();
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      // Output the result in an element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s "+"TO CLOSE THE PORTAL";
-      // If the count down is over, write some text
-      if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("demo").innerHTML = "EXPIRED";
-      }
-      }, 1000);
-  
-
-
-
+      script.
+        // Set the date we're counting down to
+        var countDownDate = new Date(" May 21, 2019 00:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        // Get todays date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s "+"TO CLOSE THE PORTAL";
+        // If the count down is over, write some text
+        if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+        }
+        }, 1000);
