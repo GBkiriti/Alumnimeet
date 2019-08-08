@@ -18,6 +18,23 @@ block franken-body
         br
       .form-group
         h2
+        label BRANCH: 
+            select.form-control(name="branch")
+              option(value='cse') CSE
+              option(value='ece') ECE
+              option(value='bba') BBA
+              option(value='mba') MBA
+        br
+      .form-group
+        h2
+        label YEAR: 
+            select.form-control(name="year")
+              option(value='1_year') I YEAR
+              option(value='2_year') II YEAR
+              option(value='3_year') III YEAR
+        br
+      .form-group
+        h2
         label GENDER: 
             select.form-control(name="gender")
               option(value='male') MALE
